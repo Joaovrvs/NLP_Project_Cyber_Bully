@@ -178,7 +178,7 @@ The five-class experiment is best interpreted as a cleaner analytical view of th
    - `type`
 
 4. Open and run `cyberbullying_analysis.ipynb`.
-5. Add or replace the figures in `images/`.
+5. The notebook generates the plot files in `images/`; replace the placeholder assets there if you want to add your finalized figures manually.
 
 ## Repository Structure
 
