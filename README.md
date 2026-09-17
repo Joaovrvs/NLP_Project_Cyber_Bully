@@ -26,8 +26,7 @@ Original target space (six classes):
 - `other_cyberbullying`
 - `religion`
 
-**Class distribution placeholder**  
-[INSERT IMAGE HERE]
+![Class distribution placeholder](images/class_distribution.png)
 
 ## Methodology
 
@@ -103,8 +102,7 @@ This is a **methodological decision**, not a performance optimization. The `othe
 | TF-IDF | Logistic Regression | 0.8177 | 0.8188 |
 | Sentence Transformer embeddings | Logistic Regression | 0.8106 | 0.8085 |
 
-**Model comparison placeholder**  
-[INSERT IMAGE HERE]
+![Model comparison placeholder](images/model_comparison.png)
 
 ### Stage 2 — Five-class TF-IDF experiment
 
@@ -133,8 +131,7 @@ The five-class confusion matrix indicates that the main remaining confusion occu
 
 This suggests that the most difficult boundary is not between all abusive and non-abusive content in general, but specifically between some gender-related tweets and tweets labeled as non-cyberbullying.
 
-**Confusion matrix placeholder**  
-[INSERT IMAGE HERE]
+![Confusion matrix placeholder](images/confusion_matrix.png)
 
 ### Misclassification focus
 
@@ -175,13 +172,13 @@ The five-class experiment is best interpreted as a cleaner analytical view of th
    pip install -r requirements.txt
    ```
 
-3. Place the dataset CSV inside `/home/runner/work/NLP_Project_Cyber_Bully/NLP_Project_Cyber_Bully/data/` with the required columns:
+3. Place the dataset CSV inside `data/` with the required columns:
 
    - `tweet`
    - `type`
 
-4. Open and run `/home/runner/work/NLP_Project_Cyber_Bully/NLP_Project_Cyber_Bully/cyberbullying_analysis.ipynb`.
-5. Add or replace the figures in `/home/runner/work/NLP_Project_Cyber_Bully/NLP_Project_Cyber_Bully/images/`.
+4. Open and run `cyberbullying_analysis.ipynb`.
+5. Add or replace the figures in `images/`.
 
 ## Repository Structure
 
