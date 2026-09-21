@@ -144,10 +144,14 @@ These cases can help identify whether ambiguity comes from sarcasm, implicit abu
 
 ## Discussion
 
-A simple linear baseline with TF-IDF performs competitively in the six-class setting and slightly outperforms the Sentence Transformer representation in this project setup. This is a useful reminder that for short-text classification, sparse lexical features can remain very strong baselines.
+The results show that a simple linear baseline using TF-IDF performs competitively in the six-class setting and slightly outperforms the Sentence Transformer representation in this experimental setup. TF-IDF achieved a macro-F1 of 0.819 with a runtime of approximately 6 seconds, compared with a macro-F1 of 0.808 and approximately 3.47 minutes for the Sentence Transformer approach.
 
-The five-class experiment is best interpreted as a cleaner analytical view of the more specifically defined categories, not as a headline claim that the project universally "improves" from the six-class setup.
+This result highlights an important consideration in short-text classification: sparse lexical representations can remain highly effective when the target classes are strongly associated with specific linguistic patterns. More complex and computationally expensive representations do not necessarily translate into better predictive performance for every task.
 
+The five-class experiment should be interpreted as a cleaner analytical formulation rather than as a direct performance improvement over the six-class problem. The `other_cyberbullying` category was excluded because it represents a more heterogeneous group than the other cyberbullying categories, creating a less clearly defined boundary with `not_cyberbullying`. By focusing on the more specifically defined categories, the second experiment provides a more interpretable view of the classification task.
+
+Under this formulation, the same TF-IDF-based approach achieved a macro-F1 of 0.928. However, this result should be compared only within the five-class setting, since the underlying classification problem differs from the original six-class formulation.
+> **Note:** Runtime measurements are specific to the experimental environment and should be interpreted as relative computational costs rather than universal benchmarks.
 ## Limitations
 
 - The dataset contains only tweet text and class labels.
